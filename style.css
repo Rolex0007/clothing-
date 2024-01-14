@@ -1,3 +1,92 @@
-.hello {
-  color: green;
+:root {
+  --google-font: "Lemon", serif;
+  --google-font2: "Inconsolata", monospace;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(163, 163, 163);
+}
+
+nav {
+  min-height: 8vh;
+  background-color: lightskyblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  text-align: center;
+  height: 8vh;
+  background-color: brown;
+  padding: 8px;
+  font-family: var(--google-font);
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6vh;
+  width: 90%;
+  margin-top: 10px;
+}
+
+nav ul li {
+  list-style: none;
+  cursor: pointer;
+  font-family: var(--google-font2);
+  padding: 15px;
+}
+
+.search {
+  margin: 10vh;
+  padding: 50px;
+}
+
+/* end of navbar */
+
+/* content section */
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.panel {
+  margin: 13vh;
+  background-color: red;
+  width: 70%;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* footer */
+
+footer {
+  background-color: rgb(163, 163, 163);
+  height: 55vh;
+  display: flex;
+  justify-content: center;
+
+  background-color: gray;
+  padding: 10vh;
+}
+
+footer ul {
+  margin-bottom: 10vh;
+  margin-left: 15vh;
+  width: 80vh;
 }
