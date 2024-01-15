@@ -11,6 +11,7 @@
 
 body {
   background-color: rgb(163, 163, 163);
+  overflow-x: hidden;
 }
 
 nav {
@@ -19,15 +20,15 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }
 
 .logo {
   text-align: center;
   height: 8vh;
   background-color: brown;
-  padding: 8px;
+  padding: 2vh;
   font-family: var(--google-font);
-  width: 100%;
 }
 
 nav ul {
@@ -36,19 +37,59 @@ nav ul {
   align-items: center;
   height: 6vh;
   width: 90%;
-  margin-top: 10px;
-}
-
-nav ul li {
+  margin-top: 0.8em;
+  font-family: var(--google-font2);
   list-style: none;
   cursor: pointer;
-  font-family: var(--google-font2);
-  padding: 15px;
 }
 
-.search {
-  margin: 10vh;
-  padding: 50px;
+.category,
+.user-opt {
+  margin: 3vh;
+}
+
+.searchdiv {
+  margin-left: 15vh;
+  margin-right: 15vh;
+}
+
+.search-box {
+  padding: 6px;
+  margin-top: 2px;
+  font-size: 17px;
+  border: none;
+  width: 20vw;
+  font-size: 1.4vw;
+  height: 5vh;
+}
+
+.search-btn {
+  float: right;
+  padding: 6px;
+  margin-top: 2px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  width: auto;
+  font-size: 1.4vw;
+  height: 5vh;
+}
+
+.search-btn:hover {
+  background: #bbb;
+}
+
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px;
 }
 
 /* end of navbar */
