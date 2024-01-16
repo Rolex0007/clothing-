@@ -40,21 +40,21 @@ html {
 }
 
 body {
-  background-color: rgb(163, 163, 163);
+  background-color: #fdf7e4;
   overflow-x: hidden;
 }
 
 .logo {
   text-align: center;
   height: 8vh;
-  background-color: brown;
+  background-color: #eb455f;
   padding: 2vh;
   font-family: var(--google-font);
 }
 
 nav {
   max-height: 8vh;
-  background-color: lightskyblue;
+  background-color: #b799ff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -82,7 +82,7 @@ nav ul {
 
 .userlinks {
   height: 6vh;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .user-opt img {
@@ -92,31 +92,39 @@ nav ul {
 .searchdiv {
   margin-left: 15vh;
   margin-right: 15vh;
+  width: 50%;
 }
 
 .search-box {
   padding: 1vw;
   font-size: 17px;
   border: none;
-  width: 20vw;
+  width: 80%;
   font-size: 1.4vw;
   height: 5vh;
   font-family: var(--google-font2);
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
 }
 
 .search-btn {
   float: right;
   line-height: 0px;
   padding: 0.5vw;
-  margin-right: 16px;
   background: #ddd;
   font-size: 17px;
   border: none;
   cursor: pointer;
-  width: auto;
+  width: 20%;
   font-size: 1.4vw;
   height: 5vh;
   font-family: var(--google-font2);
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.search-btn img {
+  display: none;
 }
 
 .search-btn:hover {
@@ -147,7 +155,7 @@ nav ul {
 
 .panel {
   margin: 13vh;
-  background-color: red;
+  background-color: #2b3467;
   width: 70%;
   height: 95vh;
   display: flex;
@@ -159,7 +167,7 @@ nav ul {
 /* footer */
 
 footer {
-  background-color: rgb(163, 163, 163);
+  background-color: #424769;
   height: 55vh;
   display: flex;
   justify-content: center;
@@ -178,27 +186,30 @@ footer ul {
 
 /* tablet */
 
-@media screen and (max-width: 980px) {
-  .searchdiv {
-    width: 50%;
-    margin: 5%;
-  }
+@media screen and (max-width: 876px) {
   .search-btn span {
     display: none;
   }
+  .search-btn img {
+    display: inline-block;
+  }
+  .searchdiv {
+    width: 50%;
+    margin: 50px;
+  }
   .search-box {
-    width: 80%;
+    width: 75%;
     font-size: 25px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
   }
   .search-btn {
-    min-width: 10%;
-    width: 15%;
+    width: 25%;
     margin-right: auto;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
   }
+
   .userlinks {
     padding: 0%;
   }
@@ -221,32 +232,14 @@ footer ul {
     width: 50%;
     display: flex;
     flex-direction: column;
-    transform: translateX(-100%);
+    transform: translateX(-106%);
   }
-  .userlinks {
-    width: 40%;
-    justify-content: space-around;
-    padding-left: 0px;
-  }
+
   .navlinks li {
     opacity: 0;
   }
-
-  .userlinks li {
-    width: 10px;
-    margin: 20px;
-    height: 5vh;
-  }
-
-  .category,
-  .user-opt {
+  .category {
     font-size: 100%;
-  }
-  .user-opt img {
-    height: 60%;
-    position: relative;
-    top: 25%;
-    right: 50%;
   }
 
   .searchdiv {
@@ -254,13 +247,13 @@ footer ul {
     margin: 10px;
   }
   .search-box {
-    width: 80%;
+    width: 75%;
     font-size: 25px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
   }
   .search-btn {
-    width: 20%;
+    width: 25%;
     margin-right: auto;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
