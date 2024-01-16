@@ -1,3 +1,145 @@
-.hello {
-  color: green;
+:root {
+  --google-font: "Lemon", serif;
+  --google-font2: "Inconsolata", monospace;
 }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: rgb(163, 163, 163);
+  overflow-x: hidden;
+}
+
+.logo {
+  text-align: center;
+  height: 8vh;
+  background-color: brown;
+  padding: 2vh;
+  font-family: var(--google-font);
+}
+
+nav {
+  min-height: 8vh;
+  background-color: lightskyblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6vh;
+  width: 20%;
+  margin-top: 0.8em;
+  font-family: var(--google-font2);
+  list-style: none;
+  cursor: pointer;
+}
+
+.category,
+.user-opt {
+  margin: 3vh;
+  font-size: 1.2vw;
+  font-weight: 100;
+}
+
+.user-opt img {
+  height: 1.8vw;
+}
+
+.searchdiv {
+  margin-left: 15vh;
+  margin-right: 15vh;
+}
+
+.search-box {
+  padding: 1vw;
+  font-size: 17px;
+  border: none;
+  width: 20vw;
+  font-size: 1.4vw;
+  height: 5vh;
+  font-family: var(--google-font2);
+}
+
+.search-btn {
+  float: right;
+  line-height: 0px;
+  padding: 0.5vw;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  width: auto;
+  font-size: 1.4vw;
+  height: 5vh;
+  font-family: var(--google-font2);
+}
+
+.search-btn:hover {
+  background: #bbb;
+}
+
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #000000;
+  margin: 5px;
+}
+
+/* end of navbar */
+
+/* content section */
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.panel {
+  margin: 13vh;
+  background-color: red;
+  width: 70%;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* footer */
+
+footer {
+  background-color: rgb(163, 163, 163);
+  height: 55vh;
+  display: flex;
+  justify-content: center;
+
+  background-color: gray;
+  padding: 10vh;
+}
+
+footer ul {
+  margin-bottom: 10vh;
+  margin-left: 15vh;
+  width: 80vh;
+}
+
+/* media query */
