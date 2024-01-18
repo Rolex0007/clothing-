@@ -35,10 +35,6 @@ E6FFFD
   box-sizing: border-box;
 }
 
-html {
-  overflow-x: hidden;
-}
-
 body {
   background-color: #fdf7e4;
   overflow-x: hidden;
@@ -58,6 +54,8 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
 }
 
 nav ul {
@@ -192,6 +190,7 @@ footer {
 
 .footlinks ul li {
   cursor: pointer;
+  position: relative;
 }
 
 .footsociallinks {
@@ -205,7 +204,7 @@ footer {
 .footlinks section {
   /* background-color: beige; */
   padding: 3% 1%;
-  max-width: 25%;
+  width: 25%;
   margin-top: 3vh;
   font-size: clamp(15px, 0.5vw + 0.5rem, 24px);
   cursor: default;
@@ -303,6 +302,22 @@ hr {
   }
   .footlinks ul {
     width: 50%;
+  }
+
+  .footlinks ul h5 {
+    cursor: pointer;
+  }
+  .footlinks ul h5:hover {
+    text-decoration: underline;
+    color: #3c3a3ae4;
+  }
+
+  .footlinks ul li {
+    display: none;
+  }
+  .footlinks section {
+    width: 100%;
+    text-align: center;
   }
 }
 
