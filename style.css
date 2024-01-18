@@ -331,18 +331,20 @@ hr {
   .navlinks {
     position: absolute;
     height: 92vh;
-    top: 6vh;
-    background-color: lightblue;
+    top: 6.6vh;
+    background-color: #b799ff;
     align-items: flex-start;
     justify-content: flex-start;
-    width: 50%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     transform: translateX(-106%);
+    transition: transform 0.4s ease;
   }
 
   .navlinks li {
     opacity: 0;
+    font-size: 7vw;
   }
   .category {
     font-size: 100%;
@@ -373,12 +375,17 @@ hr {
   }
 }
 
-/* experiment */
-/* working */
-/* .footlinks ul h5:hover {
-  color: rebeccapurple;
+.navactive {
+  transform: translateX(-6%);
 }
 
-.footlinks ul:hover li {
-  display: block;
-} */
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
