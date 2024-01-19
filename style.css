@@ -246,6 +246,15 @@ nav ul {
   padding: 0px;
 }
 
+.cart {
+  text-align: center;
+}
+
+.checkout {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* footer */
 
 footer {
