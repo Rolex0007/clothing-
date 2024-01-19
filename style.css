@@ -48,6 +48,11 @@ body {
   font-family: var(--google-font);
 }
 
+.logo a {
+  text-decoration: none;
+  color: black;
+}
+
 nav {
   max-height: 8vh;
   background-color: #b799ff;
@@ -69,6 +74,17 @@ nav ul {
   list-style: none;
   cursor: pointer;
   margin: 10px;
+}
+
+.navlinks li a {
+  text-decoration: none;
+  color: #404146;
+  font-family: var(--google-font2);
+}
+
+.navlinks li :hover {
+  color: #af3e51df;
+  text-decoration: underline;
 }
 
 .category,

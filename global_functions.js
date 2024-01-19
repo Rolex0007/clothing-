@@ -1,8 +1,4 @@
-export const navslide = () => {
-  const burger = document.querySelector(".burger");
-  const nav = document.querySelector(".navlinks");
-  const navlinks = nav.querySelectorAll(".navlinks li");
-
+export const navslide = (burger, nav, navlinks) => {
   burger.addEventListener("click", () => {
     //   nav toggles navigation
     nav.classList.toggle("navactive");
@@ -18,5 +14,3 @@ export const navslide = () => {
     });
   });
 };
-
-navslide();
