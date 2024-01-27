@@ -81,6 +81,7 @@ nav ul {
   text-decoration: none;
   color: #404146;
   font-family: var(--google-font2);
+  font-size: 1em;
 }
 
 .navlinks li :hover {
@@ -105,8 +106,8 @@ nav ul {
 }
 
 .searchdiv {
-  margin-left: 15vh;
-  margin-right: 15vh;
+  margin-left: 15vw;
+  margin-right: 15vw;
   width: 50%;
 }
 
@@ -263,8 +264,13 @@ nav ul {
 
 .checkout-items {
   background-color: lightsalmon;
-  width: 65%;
+  width: 55%;
   padding: 1em;
+}
+
+.checkout-payment {
+  background-color: lightcyan;
+  width: 40%;
 }
 
 .cart-item {
@@ -275,6 +281,7 @@ nav ul {
   color: white;
   padding: 3%;
   height: 35vh;
+  margin-bottom: 1.8vh;
 }
 
 .cart-item-img img {
@@ -295,21 +302,31 @@ nav ul {
 .add-remove-btn {
   display: flex;
   align-items: center;
+  height: 6vh;
+}
+
+.cart-item-remove {
+  background-color: rgba(156, 148, 148, 0.129);
+  border-radius: 50%;
+  border: 0.2px solid rgba(71, 68, 68, 0.201);
 }
 
 .quantity,
-.cart-item-remove,
-.cart-item-add {
+.cart-item-remove {
   margin-right: 3vw;
   text-align: center;
+  color: black;
 }
 
 .quantity button {
-  border: 0.5px solid black;
-  width: 1.5vw;
-  background-color: transparent;
+  border: 0.2px solid rgba(71, 68, 68, 0.201);
+  width: 1.8vw;
+  background-color: rgba(156, 148, 148, 0.129);
   font-size: 1.5em;
-  height: fit-content;
+  height: 5vh;
+  display: inline-flex;
+  align-items: end;
+  justify-content: center;
 }
 
 .cart-item-remove button {
@@ -336,11 +353,6 @@ nav ul {
   padding: 0px;
   margin-top: 10px;
   font-size: 0.8rem;
-}
-
-.checkout-payment {
-  background-color: lightcyan;
-  width: 30%;
 }
 
 /* footer */
@@ -450,6 +462,13 @@ hr {
 /* tablet */
 
 @media screen and (max-width: 876px) {
+  .navlinks {
+    width: 23%;
+  }
+  .navlinks li a {
+    font-size: 1em;
+  }
+
   .search-btn span {
     display: none;
   }
@@ -475,6 +494,7 @@ hr {
 
   .userlinks {
     padding: 0%;
+    width: 15%;
   }
 
   /* footer */
@@ -512,12 +532,12 @@ hr {
   }
   .navlinks {
     position: absolute;
-    height: 92vh;
+    height: 97vh;
     top: 6.6vh;
     background-color: #b799ff;
     align-items: flex-start;
     justify-content: flex-start;
-    width: 60%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     transform: translateX(-106%);
@@ -526,14 +546,14 @@ hr {
 
   .navlinks li {
     opacity: 0;
-    font-size: 7vw;
+    font-size: 2em;
   }
   .category {
     font-size: 100%;
   }
 
   .searchdiv {
-    width: 100%;
+    width: 55%;
     margin: 10px;
   }
   .search-box {
@@ -554,6 +574,9 @@ hr {
 
   .search-btn span {
     display: none;
+  }
+  .user-opt a img {
+    height: 2.8vh;
   }
 }
 
